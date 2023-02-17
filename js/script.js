@@ -39,3 +39,8 @@ function displayResultMessage(result) {
   //modalWrapper.classList.add('open')
   Modal.open();
 }
+
+// Fechar a janela do ero ao digitar no campo
+// evento de verificar se esta sendo digitado no input é o oninput 
+inputHeight.oninput = () => AlertError.close()
+inputWeight.oninput = () => AlertError.close()
